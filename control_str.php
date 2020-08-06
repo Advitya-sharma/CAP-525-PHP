@@ -92,12 +92,7 @@ while($i<=5){
 }
 echo "\n";
 
-for($i=0;$i<10;$i++){
-    for($j=0;$j<=$i;$j++){
-        echo "*";
-    }
-    echo "\n";
-}
+//right triangle
 
 for($i=0;$i<10;$i++){
     for($j=0;$j<=$i;$j++){
@@ -105,9 +100,24 @@ for($i=0;$i<10;$i++){
     }
     echo "\n";
 }
+echo "\n";
 
+//triangle
 
+$rows = 11;
 
+for($j=1;$j<=$rows;$j++){
+    for($i=1;$i<=$rows*2;$i++){
+        
+    if($i>=$rows-$j+1 && $i<=$rows+$j-1){
+        echo "*";
+    }
+    else{
+        echo " ";
+            }
+    }
+    echo "\n";
+}
 
 ?>
 
