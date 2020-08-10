@@ -104,7 +104,7 @@ echo "\n";
 
 //triangle
 
-$rows = 11;
+$rows = 20;
 
 for($j=1;$j<=$rows;$j++){
     for($i=1;$i<=$rows*2;$i++){
