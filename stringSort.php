@@ -1,26 +1,35 @@
 <?php
 
-$str = str_split("lovely");
+$string = "lovely professional university";
+
+$string = explode(" ",$string);
+
+for($k = 0;$k<3;$k++){
+
+$str = str_split($string[$k]);
 print_r($str);
 
-for($i=0;$i<6;$i++){
+for($i=0;$i<count($str);$i++){
 echo $str[$i];
 }
 
-for($i=0;$i<6;$i++){
-for($j=$i+1;$j<6;$j++){
+$count = count($str);
+
+for($i=0;$i<$count;$i++){
+for($j=$i+1;$j<$count;$j++){
+    //echo $str[$i],$str[$j];
     if($str[$i] > $str[$j]){
-        $k = $str[$i];
+        $temp = $str[$i];
         $str[$i] = $str[$j];
-        $str[$j] = $k;
+        $str[$j] = $temp;
     }
+
 }
 }
 
+$string[$k] = implode($str);
+}
+
+print_r($string);
 echo "\n";
-
-for($i=0;$i<6;$i++){
-echo $str[$i];
-}
-
 ?>
