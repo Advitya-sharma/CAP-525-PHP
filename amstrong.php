@@ -1,5 +1,5 @@
 <?php
-$num=370;
+$num=372;
 $temp = $num;
 $sum = 0;
 while($temp != 0){
@@ -7,7 +7,7 @@ while($temp != 0){
     $sum += pow($a,3);
     $temp /= 10;
 }
-
+echo $sum;
 if($sum == $num){
     echo "Amstrong";
 }
