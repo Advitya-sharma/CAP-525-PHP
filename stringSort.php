@@ -4,7 +4,7 @@ $string = "lovely professional university";
 
 $string = explode(" ",$string);
 
-for($k = 0;$k<3;$k++){
+for($k=0;$k<3;$k++){
 
 $str = str_split($string[$k]);
 $count = count($str);
@@ -21,7 +21,6 @@ for($j=$i+1;$j<$count;$j++){
     }
 
 $string[$k] = implode($str);
-
 }
 $string = implode($string," ");
 echo $string;
