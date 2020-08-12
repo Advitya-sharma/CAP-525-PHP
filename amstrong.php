@@ -7,7 +7,7 @@ while($temp != 0){
     $sum += pow($a,3);
     $temp /= 10;
 }
-echo $sum;
+
 if($sum == $num){
     echo "Amstrong";
 }
