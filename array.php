@@ -22,5 +22,9 @@ foreach($arrMul as $arrk=>$arrv){
     } 
 }
 
+print_r (array_flip($arr));
+
+print_r(array_search("hello",array("hello","HELLO","hi")));
+
 
 ?>
