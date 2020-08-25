@@ -1,11 +1,11 @@
 <?php
-$num=372;
+$num=153;
 $temp = $num;
 $sum = 0;
 while($temp != 0){
     $a = $temp%10;
     $sum += pow($a,3);
-    $temp /= 10;
+    $temp = floor($temp/10);   
 }
 
 if($sum == $num){

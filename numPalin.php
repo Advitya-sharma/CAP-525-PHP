@@ -6,7 +6,7 @@ while($temp!=0)
 {
 	$rem=$temp%10;
     $sum=($sum*10)+$rem;
-    $temp=floor($temp/10);
+    $temp= floor($temp/10);
 }
 if($sum===$n)
 {
