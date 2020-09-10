@@ -3,8 +3,9 @@ class base{
 
     function __construct(){
         echo "constructor called\n";
-    }
-        final function finalx(){
+    }    
+    
+    final function finalx(){
         echo "final\n";
     }
 
@@ -21,6 +22,10 @@ class child extends base{
     function disp(){
         echo "disp over\n";
     }
+
+    // function finalx(){
+    //     echo "overriding finalx \n";
+    // } //error cannot override final
 }
 
 $obj  = new base();
