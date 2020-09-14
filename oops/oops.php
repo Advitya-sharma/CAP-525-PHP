@@ -1,6 +1,10 @@
 <?php
 class base{
 
+    private $a = "a";
+    protected $b = "a";
+    const constant = 12;
+    
     function __construct(){
         echo "constructor called\n";
     }    
@@ -20,6 +24,11 @@ class base{
 
 class child extends base{
     function disp(){
+        $a = $this->a;
+        $b = $this->b;
+        echo $a."\n";
+        echo $b."\n";
+        echo base::constant."\n";
         echo "disp over\n";
     }
 
@@ -28,7 +37,7 @@ class child extends base{
     // } //error cannot override final
 }
 
-$obj  = new base();
+$obj  = new child();
 
 $obj->disp()
 
